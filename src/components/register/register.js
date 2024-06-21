@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
-import './register.css'; // Import the CSS file
+import './register.css';
 
 const RegisterForm = ({ handleRegister }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [age, setAge] = useState(''); // Added state for age
-    const [address, setAddress] = useState(''); // Added state for address
-    const [gender, setGender] = useState(''); // Added state for gender
-    const [phoneNumber, setPhoneNumber] = useState(''); // Added state for phone number
-    const [email, setEmail] = useState(''); // Added state for email
-    const navigate = useNavigate(); // Renamed useNavigate to navigate
+    const [age, setAge] = useState(''); 
+    const [address, setAddress] = useState('');
+    const [gender, setGender] = useState(''); 
+    const [phoneNumber, setPhoneNumber] = useState(''); 
+    const [email, setEmail] = useState(''); 
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,7 +26,7 @@ const RegisterForm = ({ handleRegister }) => {
             email
         };
         handleRegister(newUser);
-        navigate('/login'); // Redirect to login after registration
+        navigate('/login');
     };
 
     return (
