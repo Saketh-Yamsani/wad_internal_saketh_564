@@ -1,0 +1,34 @@
+/* Catalog.css */
+.catalog-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.catalog-container h2 {
+    margin-bottom: 10px;
+}
+
+.catalog-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.catalog-container li {
+    margin-bottom: 10px;
+}
+
+.catalog-container li button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.catalog-container li button:hover {
+    background-color: #0056b3;
+}
