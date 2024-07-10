@@ -25,7 +25,6 @@ const RegisterForm = ({ handleRegister }) => {
             phoneNumber,
             email
         };
-        handleRegister(newUser);
         navigate('/login');
     };
 
